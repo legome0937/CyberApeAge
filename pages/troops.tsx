@@ -6,6 +6,7 @@ import GlobalFooter1 from "../components/GlobalFooter1";
 import HeadMetadata from "../components/HeadMetadata";
 import { ShopContainer, ShopItemsWrapper, WelcomeHeader1, WelcomeHeader2 } from "../styles/Troops";
 import PageTopSpacer from "../components/PageTopSpacer";
+import DiscordIcon from "../components/DiscordIcon";
 import SectionHeader from "../components/SectionHeader";
 import HorizontalSlider from "../components/HorizontalSlider";
 import BloomingContainer from "../components/BloomingContainer";
@@ -63,7 +64,9 @@ const Home: NextPage<any> = () => {
           <WelcomeHeader2>
             <div className="stepbar">
               <Stepbar />
+
             </div>
+
 
           </WelcomeHeader2>
 
@@ -79,57 +82,45 @@ const Home: NextPage<any> = () => {
         <ShopItemsWrapper>
           <WelcomeHeader2>
             <div className="midle">
+              <div className="cut-div purple">
+                <Image src="/Vector.png" width="250" height="130" />
+                <div className="content-cut">
+                  <h2>CYBER LOCKDOWN </h2>
+                  <p>Rogue Cyber Apes can be locked down in the Cyber Ape Age for [REDACTED].</p>
+                  <p>Initiate Cyber Lockdown...</p>
+                </div>
+              </div>
+              <div className="cut-div green">
+                <Image src="/beaker.png" width="50" height="140" />
+                <div className="content-cut">
+                  <h2>ASTRAL BREAKERS</h2>
+                  <p>Coming soon..</p>
+                </div>
+              </div>
 
-              <BloomingContainer
-                accent="#29458D"
-                customStyles={{
-                  height: "180px",
-                  width: "800px",
-                  padding: "",
-                  borderBottomLeftRadius: 14,
-                  borderTopRightRadius: 14,
-                }}
-              ><div className="flexbox">
-                  <div>    <Image src="/Vector.png" width="130" height="160" /></div>
-                  <div className="content-letter">
-                    <h1>CYBER LOCKDOWN </h1>
-                    <p>Rogue Cyber Apes can be locked down in the Cyber Ape Age for [REDACTED].Initiate Cyber Lockdown...</p>
+              <div className="cut-div black">
+                <div className="slider-cut">
+                  <div className="dots-slider">
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
                   </div>
 
-                </div>
-
-              </BloomingContainer>
-              <BloomingContainer
-                accent="#789764"
-                customStyles={{
-                  height: "180px",
-                  width: "800px",
-                  padding: "2.5rem",
-                  marginLeft: "1rem",
-                  borderBottomLeftRadius: 14,
-                  borderTopRightRadius: 14,
-                }}
-              >
-                <div className="flexbox1">
-                  <div>  <Image src="/beaker.png" width="50" height="140" /></div>
-
-                  <div> <h1>ASTRAL BREAKERS</h1>
-                    <p>Coming soon..</p>
+                  <div className="arrow-slider">
+                    <p>  &lt; &gt;</p>
                   </div>
                 </div>
-              </BloomingContainer>
+                <div className="content-cut">
+                  <p>FEATURED ANNOUNCMENT</p>
+                  <h2>DAO VOTE ON PRIZE POOL</h2>
+                  <p>A vote as taken place on the DAO to find the next move on the...</p>
+                </div>
+              </div>
 
-              <BloomingContainer
-                accent="#444"
-                customStyles={{
-                  width: "35%",
-                  padding: "2rem 2rem 0 2rem",
-                  border: "solid #272727 1px",
-                  margin: "0 1rem"
-                }}
-              > <h1>MAKING OF: CYBER APE AGE </h1>
-                <p>Developing 52 unique pixel art traits, start of development of Cyber Ape Age experienc</p>
-              </BloomingContainer></div>
+
+            </div>
 
 
           </WelcomeHeader2>
@@ -256,61 +247,49 @@ const Home: NextPage<any> = () => {
                 </BloomingContainer>
               </div>
 
-              <BloomingContainer
-                accent="#444"
-                customStyles={{
-                  height: "180px",
-                  width: "90%",
-                  padding: "2.5rem",
-                  marginLeft: "1rem",
-                  borderBottomLeftRadius: 14,
-                  borderTopRightRadius: 14,
-                }}
-              >
-                <div className="discord-sec">
 
-                  <h2>WANT MORE STARTS?</h2>
-                  <div>
-                    <p> check our discord and leave us feedback on</p>
-                    <p>stats you’d like to see displayed in troop’s hub</p>
-                  </div>
+              <div className="discord-sec">
+
+                <h2>WANT MORE STARTS?</h2>
+                <div className="dis-content">
+                  <p> check our discord and leave us feedback on</p>
+                  <p>stats you’d like to see displayed in troop’s hub</p>
                 </div>
-              </BloomingContainer>
+                <SignatureButton onClick={() => { window.location.href = "https://discord.gg/cyberapeage"; }} accent="#5865F2">
+
+                  <DiscordIcon fill="rgba(255, 255, 255, 0.35)" />
+                  discord server
+                </SignatureButton>
+              </div>
 
 
             </div>
 
             <div >
               <div className="apsec">
-                <BloomingContainer
-                  accent="#444"
-                  customStyles={{
-                    width: "100%",
+                {/* list item start */}
+                <div className="flexitem1">
 
-                    height: "10%",
-                    border: "white",
-                  }}
-                > <div className="flexitem1">
+                  <div className="flexitems2">
+                    <h2>1</h2>
+                    <h2 className="num-gray">st</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
 
-                    <div className="flexitems2">
-                      <h2>1</h2>
-                      <h2 className="num-gray">st</h2>
-                      <Image src="/ape2.png" width="70" height="65%" />
-                      <span>
-                        <p className="white-badge">SHAKRIO</p>
-                        <p className="blue-badge">@LOREMSUM</p>
-                      </span>
-                    </div>
-                    <div className="flexitems2">
-                      <p>1m22s</p>
-                    </div>
-                    <div className="flexitems2">
-                      <p>+2 SOL</p>
-                    </div>
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
                   </div>
-
-                </BloomingContainer>
-
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
 
               </div>
 

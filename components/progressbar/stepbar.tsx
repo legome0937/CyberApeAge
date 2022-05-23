@@ -48,7 +48,7 @@ const Stepbar: NextPage = () => {
   return (
     <div style={{ margin: 45 }}>
       <ProgressBar
-        width={1100}
+        width={1000}
         height={7}
         percent={
           100 *
@@ -80,13 +80,17 @@ const Stepbar: NextPage = () => {
                   <br />
                   {step.status}
                 </div>
+
               )}
             />
           );
         })}
       </ProgressBar>
+      <div className="blur-item">
+      </div>
 
     </div>
+
 
 
 

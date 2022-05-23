@@ -24,7 +24,7 @@ width: 100%;
   flex-direction:column;
   align-items:center;
   justify-content: center;
-  margin:-15px 320px 70px -40px;
+  margin:-15px 320px 70px -100px;
   
   h2 {
    font-size:31px;
@@ -121,48 +121,171 @@ justify-content: center;
 
 
 .stepbar{
+margin-left:-100px;
   display: flex;
   flex-direction: row;
  justify-content: center;
+ position: relative;
+ z-index:0;
  
+ .blur-item{
+    position:absolute;
+    width:100px;
+    height:8px;
+    background: red;
+    z-index:1;
+    right:-50px;
+    top:45px;
+    
+   background-image: linear-gradient(to right, #808080 , black);
+  }
 }
+
+
 .midle{
   width: 100%;
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
-  .flexbox{
-    display: grid;
-   align-items:start;
-   padding-top:1rem;
-    grid-template-columns: 0.5fr 1fr ;
-    
-    .content-letter{
-      padding:20px 5px;
-      
-      p {
-      font-size: 16px;
-      
-      }
+  
+  
+  .cut-div {
+  display:flex;
+   width: 700px;
+   height:200px;
+  position: relative;
+  padding-top: 30px;
+  padding-left:5px;
+  z-index: 0;
+  
+  h2{
+  font-weight: 400;
+  font-size: 40px;
+  }
+}
+ .cut-div.purple {
+ background-image: linear-gradient(45deg, transparent 2%, #3B64CE 2% 98%, transparent 95%);
+ h2{
+  color:#3B64CE;
+ }
+ }
+ 
+ .cut-div.green {
+ margin-left:20px;
+ padding-left:50px;
+ background-image: linear-gradient(45deg, transparent 2%, #BBEC9D 2% 98%, transparent 95%);
+ h2{
+  color:#BBEC9D;
+ }
+ }
+
+.cut-div.black {
+  padding-top:10px;
+  display:flex;
+  flex-direction: column;
+  margin-left:20px;
+  width:300px;
+  background-image: linear-gradient(45deg, transparent 2%, #272727 2% 98%, transparent 95%);
+ 
+ .content-cut{
+   p{
+    padding-bottom:10px;
+    color: rgba(164, 164, 164, 0.5);
+    font-size: 16px;
+   }
+   
+   h2 {
+    font-size: 22px;
+    color:#fff
+   }
+ }
+ .slider-cut{
+ 
+ display:flex;
+ justify-content:space-between;
+  padding: 0 20px 40px 20px;
+  .dots-slider{
+    display:flex;
+    align-items: center;
+    .dot:first-child{
+        width:6px;
+        height:6px;
+        background-color: white;
+        margin-right:5px;
+    }
+    .dot{
+        width:6px;
+        height:6px;
+        background-color: #272727;
+        margin-right:5px;
     }
   }
-  .flexbox1{
-    display: grid;
-    align-items:start;
-    grid-template-columns: 0.5fr 1fr ;
+  
+  .arrow-slider{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
   }
+ }
+ 
+ h2{
+  color:#BBEC9D;
+ }
+ }
+ 
+.cut-div:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  background-image: linear-gradient(45deg, transparent 2%, black 2% 98%, transparent 95%);
+}
+
+.content-cut{
+  padding:0 20px 20px 20px;
+  h2{
+  padding-bottom:10px;
+  
+  }
+  p{
+  padding-bottom:15px;
+  }
+}
+
 }
 .flexitems {
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: start;
+  .apsec {
+    padding-left: 30px;
+  }
   .flexitem1{
+    margin-bottom:20px;
+    padding-right:10px;
     display: grid;
-
     grid-template-columns: 5fr 2fr 1fr ;
+    position: relative;
+     z-index:0;
+     background-image: linear-gradient(45deg, transparent 2%, #272727 2% 98%, transparent 95%);
     
   }
+  
+  .flexitem1:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  background-image: linear-gradient(45deg, transparent 2%, black 2% 98%, transparent 95%);
+}
+
   .flexitems11{
     display: grid;
     padding-right:7rem;
@@ -181,6 +304,9 @@ justify-content: center;
     .num-gray {
       color: rgba(255, 255, 255, 0.35);
       margin-right:10px;
+    }
+    .img-sec{
+      margin-top:-20px;
     }
     .white-badge{
       font-weight: 400;
@@ -203,9 +329,13 @@ justify-content: center;
   }
   
   .discord-sec {
+    padding:20px;
     display:flex;
     flex-direction:column;
     align-items:center;
+     position: relative;
+     z-index:0;
+     
     h2{
       font-weight: 400;
       font-size: 20px;
@@ -213,7 +343,24 @@ justify-content: center;
       color: rgba(255, 255, 255, 0.35);
       padding-bottom:1rem;
     }
+    .dis-content{
+     margin-bottom:2rem;
+    }
+    
+    background-image: linear-gradient(45deg, transparent 2%, #272727 2% 98%, transparent 95%);
   }
+  
+  .discord-sec:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  background-image: linear-gradient(45deg, transparent 2%, black 2% 98%, transparent 95%);
+}
+
   .flexitem4{
     display:grid;
     grid-template-columns: 1fr 1fr ;
