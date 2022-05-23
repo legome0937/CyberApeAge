@@ -290,6 +290,213 @@ const Home: NextPage<any> = () => {
                   </div>
                 </div>
                 {/* list item end */}
+                {/* list item start */}
+                <div className="flexitem1">
+
+                  <div className="flexitems2">
+                    <h2>2</h2>
+                    <h2 className="num-gray">nd</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
+
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
+                  </div>
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
+                {/* list item start */}
+                <div className="flexitem1">
+
+                  <div className="flexitems2">
+                    <h2>3</h2>
+                    <h2 className="num-gray">rd</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
+
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
+                  </div>
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
+                {/* list item start */}
+                <div className="flexitem1">
+
+                  <div className="flexitems2">
+                    <h2>4</h2>
+                    <h2 className="num-gray">th</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
+
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
+                  </div>
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
+                {/* list item start */}
+                <div className="flexitem1">
+
+                  <div className="flexitems2">
+                    <h2>5</h2>
+                    <h2 className="num-gray">th</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
+
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
+                  </div>
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
+                {/* list item start */}
+                <div className="flexitem1">
+
+                  <div className="flexitems2">
+                    <h2>6</h2>
+                    <h2 className="num-gray">th</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
+
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
+                  </div>
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
+                {/* list item start */}
+                <div className="flexitem1">
+
+                  <div className="flexitems2">
+                    <h2>7</h2>
+                    <h2 className="num-gray">th</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
+
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
+                  </div>
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
+                {/* list item start */}
+                <div className="flexitem1">
+
+                  <div className="flexitems2">
+                    <h2>8</h2>
+                    <h2 className="num-gray">th</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
+
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
+                  </div>
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
+                {/* list item start */}
+                <div className="flexitem1">
+
+                  <div className="flexitems2">
+                    <h2>9</h2>
+                    <h2 className="num-gray">th</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
+
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
+                  </div>
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
+                {/* list item start */}
+                <div className="flexitem1">
+
+                  <div className="flexitems2">
+                    <h2>10</h2>
+                    <h2 className="num-gray">th</h2>
+                    <div className="img-sec">
+                      <Image src="/ape2.png" width="80" height="90" />
+                    </div>
+
+                    <span>
+                      <p className="white-badge">SHAKRIO</p>
+                      <p className="blue-badge">@LOREMSUM</p>
+                    </span>
+                  </div>
+                  <div className="flexitems2">
+                    <p>1m22s</p>
+                  </div>
+                  <div className="flexitems2">
+                    <p>+2 SOL</p>
+                  </div>
+                </div>
+                {/* list item end */}
 
               </div>
 
