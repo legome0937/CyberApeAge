@@ -71,7 +71,7 @@ const GlobalHeader1: NextPage = () => {
             </SignatureButton>
           ) : (
             <>
-             <MenuItem >Troop&apos;s Hub</MenuItem>
+              <MenuItem >Troop&apos;s Hub</MenuItem>
               <Link href={"/shop"}>
                 <MenuItem>bazar</MenuItem>
               </Link>
@@ -82,7 +82,7 @@ const GlobalHeader1: NextPage = () => {
                   <span>{cyberAmount}</span>
                 </TokenBalanceWrapper>
               )}
-            
+
               <Socials />
             </>
           )}

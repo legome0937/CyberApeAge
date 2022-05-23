@@ -3,7 +3,7 @@ import { PAGE_MAX_WIDTH } from "../../constants";
 
 export const GlobalFooterContainer = styled.section`
   margin-top:10rem;
-  width: 100%;
+  width: 80%;
 `;
 export const ComingSoonTitle = styled.h1`
   width: 100%;
@@ -18,7 +18,7 @@ export const ComingSoonTitle = styled.h1`
 export const CyberApeRendererWrapper = styled.div`
   position: absolute;
   z-index: 2;
-  right: 10rem;
+  right: 0rem;
   bottom: 0;
 
   @media screen and (max-width: 600px) {
@@ -58,7 +58,7 @@ export const Discord = styled.a`
 export const LinksRowContainer = styled.div`
   display: flex;
   flex-direction: row;
-  
+  width:80%;
   gap: 8rem;
 `;
 

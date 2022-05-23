@@ -48,7 +48,7 @@ const Stepbar: NextPage = () => {
   return (
     <div style={{ margin: 45 }}>
       <ProgressBar
-        width={1000}
+        width={1100}
         height={7}
         percent={
           100 *

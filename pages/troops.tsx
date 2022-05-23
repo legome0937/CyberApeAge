@@ -26,37 +26,38 @@ const Home: NextPage<any> = () => {
       <GlobalHeader1 />
 
       <PageTopSpacer />
-      <ShopContainer>
-
-        <WelcomeHeader1>
-          <div className="divw">
-            <div className="flexdiv">
-              <div className="div-item">
-                <p>current prize pool</p>
-                <h1>134.5 SOL</h1>
-              </div>
-              <div className="div-item">
-                <p>next royalties airdrop</p>
-                <h1>05 february</h1>
-              </div>
-              <div className="div-item">
-                <p>ending of p2e event</p>
-                <h1>22 february</h1>
-              </div>
+      <WelcomeHeader1>
+        <div className="divw">
+          <div className="flexdiv">
+            <div className="div-item">
+              <p>current prize pool</p>
+              <h1>134.5 SOL</h1>
             </div>
-            <div className="flexdiv">
-
-              <div className="flex1">
-                <p>how can I win $ape</p>
-              </div>
-              <SignatureButton onClick={() => console.log('gg')} isContrast accent="#5865F2">
-                claim all my $APE (240)
-              </SignatureButton>
+            <div className="div-item">
+              <p>next royalties airdrop</p>
+              <h1>05 february</h1>
+            </div>
+            <div className="div-item">
+              <p>ending of p2e event</p>
+              <h1>22 february</h1>
             </div>
           </div>
+          <div className="flexdiv">
+
+            <div className="flex1">
+              <p>how can I win $ape</p>
+            </div>
+            <SignatureButton onClick={() => console.log('gg')} isContrast accent="#5865F2">
+              claim all my $APE (240)
+            </SignatureButton>
+          </div>
+        </div>
 
 
-        </WelcomeHeader1>
+      </WelcomeHeader1>
+      <ShopContainer>
+
+
 
         <ShopContainer>
           <WelcomeHeader2>
@@ -69,7 +70,8 @@ const Home: NextPage<any> = () => {
         </ShopContainer>
         <ShopContainer>
           <div className="week">
-            <h1>Week 4</h1>
+            <h2>Week 4</h2>
+            <p>CLICK FOR MORE INFO</p>
           </div>
         </ShopContainer>
 
@@ -89,8 +91,9 @@ const Home: NextPage<any> = () => {
                 }}
               ><div className="flexbox">
                   <div>    <Image src="/Vector.png" width="130" height="160" /></div>
-                  <div> <h1>LOOK FOR YOURSELF </h1>
-                    <p>Developing 52 unique pixel art traits, start of development of Cyber Ape Age experienc</p>
+                  <div className="content-letter">
+                    <h1>CYBER LOCKDOWN </h1>
+                    <p>Rogue Cyber Apes can be locked down in the Cyber Ape Age for [REDACTED].Initiate Cyber Lockdown...</p>
                   </div>
 
                 </div>
@@ -103,14 +106,15 @@ const Home: NextPage<any> = () => {
                   width: "800px",
                   padding: "2.5rem",
                   marginLeft: "1rem",
-                  borderBottomLeftRadius: 12,
+                  borderBottomLeftRadius: 14,
+                  borderTopRightRadius: 14,
                 }}
               >
                 <div className="flexbox1">
                   <div>  <Image src="/beaker.png" width="50" height="140" /></div>
 
-                  <div> <h1>LOOK FOR YOURSELF </h1>
-                    <p>Developing 52 unique pixel art traits, start of development of Cyber Ape Age experienc</p>
+                  <div> <h1>ASTRAL BREAKERS</h1>
+                    <p>Coming soon..</p>
                   </div>
                 </div>
               </BloomingContainer>
@@ -118,9 +122,10 @@ const Home: NextPage<any> = () => {
               <BloomingContainer
                 accent="#444"
                 customStyles={{
-                  width: "50%",
+                  width: "35%",
                   padding: "2rem 2rem 0 2rem",
-                  border: "none",
+                  border: "solid #272727 1px",
+                  margin: "0 1rem"
                 }}
               > <h1>MAKING OF: CYBER APE AGE </h1>
                 <p>Developing 52 unique pixel art traits, start of development of Cyber Ape Age experienc</p>
@@ -129,34 +134,32 @@ const Home: NextPage<any> = () => {
 
           </WelcomeHeader2>
 
-          <ShopContainer>
-            <WelcomeHeader2>
-              <div className="midle">
-                <BloomingContainer
-                  accent="#000000"
-                  customStyles={{
-                    width: "70%",
-                    padding: "2rem 2rem 0 2rem",
-                    border: "none",
-                  }}
-                >
-                  <p>MAKING OF: CYBER APE AGE</p>
-                  <p>Developing 52 unique pixel art traits, start of development of Cyber Ape Age experienc</p>
-                </BloomingContainer>
-                <BloomingContainer
-                  accent="#000000"
-                  customStyles={{
-                    width: "100%",
-                    padding: "2rem 2rem 0 2rem",
-                    border: "none",
-                  }}
-                >
-                  <p>MAKING OF: CYBER APE AGE</p>
-                  <p>Developing 52 unique pixel art traits, start of development of Cyber Ape Age experienc</p>
-                </BloomingContainer>
-              </div>
-            </WelcomeHeader2>
-          </ShopContainer>
+
+          <div className="event-sec">
+            <BloomingContainer
+              accent="#000000"
+              customStyles={{
+                width: "70%",
+                padding: "2rem 2rem 0 0",
+                border: "none",
+              }}
+            >
+              <h2>GENERAL STARTS</h2>
+              <p>last updated 24 january 12:00:00</p>
+            </BloomingContainer>
+            <BloomingContainer
+              accent="#000000"
+              customStyles={{
+                width: "100%",
+                padding: "2rem 2rem 0 0",
+                border: "none",
+              }}
+            >
+              <h2>LEADERBOARD FROM P2E EVENT</h2>
+              <p>last updated 24 january 12:00:00</p>
+            </BloomingContainer>
+          </div>
+
         </ShopItemsWrapper>
 
         <WelcomeHeader2>
@@ -175,42 +178,20 @@ const Home: NextPage<any> = () => {
                     padding: "1rem 1rem 0 1rem",
                     border: "none",
                   }}
-                ><div className="flexitem4">
-                    <div>
+                >
+                  <div className="flexitem4">
+                    <div className="info-spread">
                       <h3>holders spread</h3>
                       <div>
-                        <span>+1,500</span></div>
+                        <Image src="/Vector1.png" width="10" height="10" /><span> +3.68%</span></div>
 
-                      <h1>1,556</h1>
+                      <h1>1,468</h1>
                     </div>
-                    <div>
-                      <Image src="/net1.png" width="100" height="50" />
-                    </div>
-                  </div>
-
-                </BloomingContainer>
-              </div>
-
-              <div>
-
-                <BloomingContainer
-                  accent="#444"
-                  customStyles={{
-                    width: "100%",
-                    marginRight: "50px",
-                    padding: "1rem 1rem 0 1rem",
-                    border: "none",
-                  }}
-                ><div className="flexitem4">
-                    <div>
-                      <h3>holders spread</h3>
+                    <div className="info-net">
                       <div>
-                        <span>+1,500</span></div>
+                        <Image src="/net1.png" width="100" height="50" />
+                      </div>
 
-                      <h1>1,556</h1>
-                    </div>
-                    <div>
-                      <Image src="/net2.png" width="100" height="50" />
                     </div>
                   </div>
 
@@ -226,28 +207,85 @@ const Home: NextPage<any> = () => {
                     padding: "1rem 1rem 0 1rem",
                     border: "none",
                   }}
-                ><div className="flexitem4">
-                    <div>
+                >
+                  <div className="flexitem4">
+                    <div className="info-spread">
                       <h3>holders spread</h3>
                       <div>
-                        <span>+1,500</span></div>
+                        <Image src="/Vector2.png" width="10" height="10" /><span> +1,500</span></div>
 
-                      <h1>1,556</h1>
+                      <h1>423</h1>
                     </div>
-                    <div>
-                      <Image src="/net3.png" width="100" height="50" />
+                    <div className="info-net">
+                      <div>
+                        <Image src="/net2.png" width="100" height="50" />
+                      </div>
+
                     </div>
                   </div>
 
                 </BloomingContainer>
               </div>
+              <div>
+
+                <BloomingContainer
+                  accent="#444"
+                  customStyles={{
+                    width: "100%",
+                    marginRight: "50px",
+                    padding: "1rem 1rem 0 1rem",
+                    border: "none",
+                  }}
+                >
+                  <div className="flexitem4">
+                    <div className="info-spread">
+                      <h3>holders spread</h3>
+                      <div>
+                        <Image src="/Vector1.png" width="10" height="10" /><span> +1,500</span></div>
+
+                      <h1>1.10</h1>
+                    </div>
+                    <div className="info-net">
+                      <div>
+                        <Image src="/net3.png" width="100" height="50" />
+                      </div>
+
+                    </div>
+                  </div>
+
+                </BloomingContainer>
+              </div>
+
+              <BloomingContainer
+                accent="#444"
+                customStyles={{
+                  height: "180px",
+                  width: "90%",
+                  padding: "2.5rem",
+                  marginLeft: "1rem",
+                  borderBottomLeftRadius: 14,
+                  borderTopRightRadius: 14,
+                }}
+              >
+                <div className="discord-sec">
+
+                  <h2>WANT MORE STARTS?</h2>
+                  <div>
+                    <p> check our discord and leave us feedback on</p>
+                    <p>stats you’d like to see displayed in troop’s hub</p>
+                  </div>
+                </div>
+              </BloomingContainer>
+
+
             </div>
+
             <div >
               <div className="apsec">
                 <BloomingContainer
                   accent="#444"
                   customStyles={{
-                    width: "170%",
+                    width: "100%",
 
                     height: "10%",
                     border: "white",
@@ -255,80 +293,25 @@ const Home: NextPage<any> = () => {
                 > <div className="flexitem1">
 
                     <div className="flexitems2">
-                      <h2>1st</h2>
+                      <h2>1</h2>
+                      <h2 className="num-gray">st</h2>
                       <Image src="/ape2.png" width="70" height="65%" />
-                      <p>somthing</p>
+                      <span>
+                        <p className="white-badge">SHAKRIO</p>
+                        <p className="blue-badge">@LOREMSUM</p>
+                      </span>
                     </div>
                     <div className="flexitems2">
-
-
-                      <p>somthing</p>
+                      <p>1m22s</p>
                     </div>
                     <div className="flexitems2">
-
-
-                      <p>somthing</p>
+                      <p>+2 SOL</p>
                     </div>
                   </div>
 
                 </BloomingContainer>
 
-                <BloomingContainer
-                  accent="#444"
-                  customStyles={{
-                    width: "170%",
-                    marginTop: "15px",
-                    height: "10%",
-                    border: "white",
-                  }}
-                > <div className="flexitem1">
 
-                    <div className="flexitems2">
-                      <h2>1st</h2>
-                      <Image src="/ape2.png" width="70" height="65%" />
-                      <p>somthing</p>
-                    </div>
-                    <div className="flexitems2">
-
-
-                      <p>somthing</p>
-                    </div>
-                    <div className="flexitems2">
-
-
-                      <p>somthing</p>
-                    </div>
-                  </div>
-
-                </BloomingContainer>
-                <BloomingContainer
-                  accent="#444"
-                  customStyles={{
-                    width: "170%",
-                    marginTop: "15px",
-                    height: "10%",
-                    border: "white",
-                  }}
-                > <div className="flexitem1">
-
-                    <div className="flexitems2">
-                      <h2>1st</h2>
-                      <Image src="/ape2.png" width="70" height="65%" />
-                      <p>somthing</p>
-                    </div>
-                    <div className="flexitems2">
-
-
-                      <p>somthing</p>
-                    </div>
-                    <div className="flexitems2">
-
-
-                      <p>somthing</p>
-                    </div>
-                  </div>
-
-                </BloomingContainer>
               </div>
 
 
